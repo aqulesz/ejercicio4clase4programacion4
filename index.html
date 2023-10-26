@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cocina Grupal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #a3d9d6;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .intro {
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .recipe {
+      text-align: left;
+      margin: 0 auto;
+      width: 70%;
+      border: 1px solid #cccccc;
+      padding: 20px;
+      background-color: #cccccc;;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cocina Grupal</h1>
+  <h2 class="intro">Recetas de cocina</h2>
+  </header>
+  <section>
+    <article class="recipe receta">
+      <h3>Receta: Pasta con salsa de tomate</h3>
+      <img src="pasta.jpg" alt="Pasta deliciosa">
+      <p>Ingredientes:</p>
+      <ul>
+        <li>200g de pasta</li>
+        <li>1 lata de salsa de tomate</li>
+        <li>2 dientes de ajo, picados</li>
+        <li>1 cucharadita de aceite de oliva</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Queso parmesano rallado (opcional)</li>
+      </ul>
+      <p>Instrucciones:</p>
+      <ol>
+        <li>Cocina la pasta en agua con sal según las instrucciones del paquete.</li>
+        <li>En una sartén grande, calienta el aceite de oliva a fuego medio y agrega el ajo picado. Cocina hasta que esté fragante.</li>
+        <li>Agrega la salsa de tomate a la sartén y calienta a fuego medio-bajo.</li>
+        <li>Sazona la salsa con sal y pimienta al gusto. Cocina durante unos 10 minutos.</li>
+        <li>Escurre la pasta cocida y agrégala a la salsa. Mezcla para combinar.</li>
+        <li>Sirve la pasta en platos individuales y espolvorea con queso parmesano rallado si lo deseas.</li>
+      </ol>
+    </article>
+  </section>
+  <footer class="recipe form">
+    <form action="">
+      <fieldset>
+        <legend>Ingrese su receta</legend>
+        <label for="plato">Nombre del plato:</label>
+        <input type="text" id="plato" name="plato">
+        <br>
+        <label for="fileupload">Suba la foto de su plato:</label>
+        <input type="file" id="fileupload" name="fileupload">
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="ingregientes">Ingredientes:</label><br>
+        <textarea name="ingregientes" id="ingregientes" cols="40" rows="5"></textarea>
+        <br>
+        <label for="instrucciones">Instrucciones:</label><br>
+        <textarea name="instrucciones" id="instrucciones" cols="40" rows="5"></textarea>
+        <br>
+      </fieldset>
+    </form>
+  </footer>
+</body>
+</html>
+
